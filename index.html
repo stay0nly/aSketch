@@ -14,24 +14,24 @@
 
     <div class="container">
         <div class="menu">
-            <button>Dark</button>
-            <button>Rainbow</button>
-            <button>Eraser</button>
-            <input 
-                type="range" 
-                value="16" 
-                step="1" 
+            <button onclick="changeColor('black')">Black</button>
+            <button onclick="changeColor('rainbow')">Rainbow</button>
+            <button onclick="changeColor('white')">Eraser</button>
+            <input
+                type="range"
+                value="16"
+                step="1"
                 onchange="changeSize(this.value)"
             >
-            <button>Reset</button>
+            <button onclick="resetBoard()">Reset</button>
         </div>
         <div class="board" id="board"></div>
     </div>
-    
+
     <footer>
         <p>Created by Dim</p>
     </footer>
-    
+
 
     <script src="app.js"></script>
 </body>

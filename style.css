@@ -1,20 +1,23 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: aqua;
-}
-
 body {
-    background-color: #fff;
-    text-align: center;
+  text-align: center;
+}
+
+.board {
+  width: 500px;
+  height: 500px;
+  display: grid;
+  background-color: gray;
+  
+
+}
+.board:hover {
+  cursor: pointer;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+
 }
 
 .menu {
@@ -23,10 +26,4 @@ body {
     align-items: center;
 }
 
-.board {
-    width: 500px;
-    height: 500px;
-    display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(16, 1fr);
-}
+
