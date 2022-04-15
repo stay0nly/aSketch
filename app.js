@@ -1,5 +1,7 @@
 let color = "black";
 let click = true;
+const rangeValue1 = document.getElementById('range-value-1');
+const rangeValue2 = document.getElementById('range-value-2');
 
 function createBoard(size) {
   let board = document.querySelector(".board");
@@ -20,8 +22,9 @@ function createBoard(size) {
 createBoard(16);
 
 function changeSize(input) {
-    createBoard(input);
-
+  createBoard(input);
+  rangeValue1.innerHTML = input;
+  rangeValue2.innerHTML = input;
 }
 
 function colorSquare() {

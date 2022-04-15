@@ -3,6 +3,10 @@ body {
   background-color: #006778;
 }
 
+a:visited {
+  text-decoration: none;
+}
+
 h1 {
   color: #dbedf0;
   font-family: 'Roboto', sans-serif;
@@ -29,9 +33,42 @@ button:hover {
   border: 2px solid #fff;
 }
 
+button.reset {
+  background: #006778;
+  border: 2px white solid;
+}
+
+button.reset:hover {
+  background: #0093AB;
+}
+
 input {
+  -webkit-appearance: none;
   width: 200px;
   height: 3px;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity .2s;
+}
+
+input:hover {
+  opacity: 1;
+}
+
+input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #02d5ec;
+  cursor: pointer;
+}
+
+footer {
+  color: #dbedf0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .board {
@@ -64,7 +101,22 @@ input {
 }
 
 .eraser {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
+.grid-size {
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #dbedf0;
+}
 
+.fa-github {
+  font-size: 20px;
+  transition: transform 0.3s ease-in-out;
+  color: #fff;
+}
+
+.fa-github:hover {
+  transform: rotate(360deg) scale(1.2);
+}
